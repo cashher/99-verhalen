@@ -145,13 +145,13 @@ button {
     border: none;
 }
 
-#inloggen-button {
+.inloggen-button {
     background-color: #FF3268;
     /*Box-shadow afkomstig van Transavia*/
     box-shadow: inset 0 -.1875rem .0625rem #CA2B55;
 }
 
-#inloggen-button:hover {
+.inloggen-button:hover {
     background-color: #FF658E;
 }
 
