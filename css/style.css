@@ -104,6 +104,7 @@ a {
 
 input[type=search],
 input[type=text],
+input[type=email],
 input[type=password] {
     border: 0.0625em solid #91a3b7;
     border-radius: 0.5em;
