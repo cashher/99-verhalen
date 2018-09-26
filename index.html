@@ -2,73 +2,104 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>99 verhalen - overzichtspagina</title>
+    <title>99 Verhalen - overzichtspagina</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="hamburger.css">
 </head>
 
 <body>
 
     <header>
-        <h1>99 verhalen</h1>
-        <nav>Navigatie</nav>
+        <section id="section-header">
+            <a href="index.html" id="logo" title="Naar voorpagina"></a>
+            <h1>99 Verhalen</h1>
+            <a href="account.html" id="account" title="Naar mijn account"></a>
+        </section>
+        <nav>
+            <a href="index.html" id="nav-a-active">Voorpagina</a>
+            <a href="#">Verhalen</a>
+            <a href="#">Willekeurig</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
+    <section id="section-search">
+        <h2>Zoeken verhalen</h2>
+        <form id="search-form">
+            <input type="search" placeholder="Term invoeren" id="search-field" title="Vul een zoekterm in" required>
+            <button>Zoeken</button>
+        </form>
 
-    <section>
-        <h2>Zoeken</h2>
     </section>
 
     <!--https://www.w3schools.com/html/html5_new_elements.asp-->
 
     <main>
-        <section>
-            <h2>Populaire/nieuwe verhalen</h2>
-            <article>
-                <h3>Titel verhaal</h3>
-                <p>Samenvatting verhaal</p>
-                <p>Metadata verhaal</p>
-                <p>Bwaren verhaal</p>
+        <section id="section-populair">
+            <h2>Populaire verhalen</h2>
+            <article class="populair-article">
+                <div class="populair-article-img">
+                    <div class="favorite-story" title="Verhaal bewaren"></div>
+                </div>
+                <h3 class="title">Titel verhaal</h3>
+                <p class="subtitle">Ondertitel verhaal</p>
+                <p class="metadata">Metadata verhaal</p>
+
             </article>
-            <article>
-                <h3>Titel verhaal</h3>
-                <p>Samenvatting verhaal</p>
-                <p>Metadata verhaal</p>
-                <p>Bwaren verhaal</p>
+            <article class="populair-article">
+                <div class="populair-article-img">
+                    <div class="favorite-story" title="Verhaal bewaren"></div>
+                </div>
+                <h3 class="title">Titel verhaal</h3>
+                <p class="subtitle">Ondertitel verhaal</p>
+                <p class="metadata">Metadata verhaal</p>
             </article>
-            <article>
-                <h3>Titel verhaal</h3>
-                <p>Samenvatting verhaal</p>
-                <p>Metadata verhaal</p>
-                <p>Bwaren verhaal</p>
+            <article class="populair-article">
+                <div class="populair-article-img">
+                    <div class="favorite-story" title="Verhaal bewaren"></div>
+                </div>
+                <h3 class="title">Titel verhaal</h3>
+                <p class="subtitle">Ondertitel verhaal</p>
+                <p class="metadata">Metadata verhaal</p>
             </article>
         </section>
 
-        <section>
+        <section id="section-user-articles">
             <h2>Mijn verhalen</h2>
-            <article>
-                <h3>Titel verhaal</h3>
-                <p>Samenvatting verhaal</p>
-                <p>Metadata verhaal</p>
-                <p>Bwaren verhaal</p>
+            <article class="user-article">
+                <div class="populair-article-img">
+                    <div class="favorite-story-active" title="Verhaal bewaard"></div>
+                </div>
+                <h3 class="title">Titel verhaal</h3>
+                <p class="subtitle">Ondertitel verhaal</p>
+                <p class="metadata">Metadata verhaal</p>
             </article>
-            <article>
-                <h3>Titel verhaal</h3>
-                <p>Samenvatting verhaal</p>
-                <p>Metadata verhaal</p>
-                <p>Bwaren verhaal</p>
+            <article class="user-article">
+                <div class="populair-article-img">
+                    <div class="favorite-story-active" title="Verhaal bewaard"></div>
+                </div>
+                <h3 class="title">Titel verhaal</h3>
+                <p class="subtitle">Ondertitel verhaal</p>
+                <p class="metadata">Metadata verhaal</p>
             </article>
-            <article>
-                <h3>Titel verhaal</h3>
-                <p>Samenvatting verhaal</p>
-                <p>Metadata verhaal</p>
-                <p>Bwaren verhaal</p>
+            <article class="user-article">
+                <div class="populair-article-img">
+                    <div class="favorite-story-active" title="Verhaal bewaard"></div>
+                </div>
+                <h3 class="title">Titel verhaal</h3>
+                <p class="subtitle">Ondertitel verhaal</p>
+                <p class="metadata">Metadata verhaal</p>
             </article>
         </section>
     </main>
 
     <footer>
-        <h2>Footer</h2>
+        <h2>Over ons</h2>
+        <nav>
+            <a href="https://www.transavia.com/nl-NL/" target="_blank">Transavia</a>
+        </nav>
     </footer>
 
 </body>
