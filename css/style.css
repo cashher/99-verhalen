@@ -194,7 +194,7 @@ header {
 }
 
 #logo {
-    background: url('img/transavia-icon.svg');
+    background: url('../img/transavia-icon.svg');
     background-size: 2.25em;
     width: 2.25em;
     height: 2.25em;
@@ -214,7 +214,7 @@ header {
 }
 
 #account {
-    background: url('img/user-icon.svg');
+    background: url('../img/user-icon.svg');
     background-size: cover;
     width: 2.25em;
     height: 2.25em;
@@ -222,7 +222,7 @@ header {
 }
 
 #account:hover {
-    background: url('img/user-icon-purple.svg');
+    background: url('../img/user-icon-purple.svg');
     background-size: cover;
     width: 2.25em;
     height: 2.25em;
@@ -230,7 +230,7 @@ header {
 }
 
 #account-active {
-    background: url('img/user-icon-purple.svg');
+    background: url('../img/user-icon-purple.svg');
     background-size: cover;
     width: 2.25em;
     height: 2.25em;
