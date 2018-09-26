@@ -332,21 +332,21 @@ nav a:hover {
 }
 
 .favorite-story {
-    background: url('img/favorite-icon-gray.svg');
+    background: url('../img/favorite-icon-gray.svg');
     background-size: 1.5625em;
     width: 1.5625em;
     background-repeat: no-repeat;
 }
 
 .favorite-story:hover {
-    background: url('img/favorite-icon.svg');
+    background: url('../img/favorite-icon.svg');
     background-size: 1.5625em;
     width: 1.5625em;
     background-repeat: no-repeat;
 }
 
 .favorite-story-active {
-    background: url('img/favorite-icon.svg');
+    background: url('../img/favorite-icon.svg');
     background-size: 1.5625em;
     width: 1.5625em;
     background-repeat: no-repeat;
