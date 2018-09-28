@@ -1,22 +1,7 @@
 /*
 ################################################################################################################
-                TEMPORARILY MOBILE VIEW
-
-html {
-    background-color: #CCCCCC;
-}
-
-body {
-    margin: 1.25em;
-}
-
-################################################################################################################
-*/
-
-/*
-################################################################################################################
                TABLE OF CONTENT
-                1. Font-face elements
+                1. Font-face elements (afkomstig van Transavia)
                 2. Default elements
                 3. Form elements
                 4. Main/section elements
@@ -30,7 +15,7 @@ body {
 
 /*
 ################################################################################################################
-                1. FONT-FACE ELEMENTS
+                1. FONT-FACE ELEMENTS (afkomstig van Transavia)
 ################################################################################################################
 */
 
@@ -321,15 +306,29 @@ nav a:hover {
     justify-content: flex-end;
 }
 
-.title,
-.subtitle,
-.metadata {
+.title {
+    color: #FF3268;
     margin: 0;
     padding: 0;
 }
 
-.subtitle {
-    margin: 1.25em 0;
+.summary {
+    color: #000000;
+}
+
+.date {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.metadata {
+    padding: 0;
+    margin: 0;
+}
+
+.metadata li {
+    list-style-type: none;
+    font-size: 0.75em;
 }
 
 .favorite-story {
