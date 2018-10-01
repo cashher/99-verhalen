@@ -1,0 +1,58 @@
+/*
+https://codepen.io/colinlord/post/horizontal-scrolling-containerss
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+#main-populair-article {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#main-user-article {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: -10px -10px;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#main-login-register {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 -10px;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#section-login,
+#section-register {
+    width: 335px;
+    box-sizing: border-box;
+}
+
+#section-login {
+    margin-bottom: 1.25em;
+    margin-right: -20px;
+}
+
+.populair-article {
+    flex: 0 0 auto;
+    width: 335px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.user-article {
+    margin: 10px 10px;
+    width: 335px;
+    box-sizing: border-box;
+}
