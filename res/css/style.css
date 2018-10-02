@@ -149,22 +149,22 @@ button {
 
 #main-login-register {
     background-color: #00d66c;
-    padding: 1.25em;
+    padding: 0.625em;
 }
 
 #section-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25em;
 }
 
 #section-populair-article {
     background-color: #F3E5D8;
-    padding: 1.25em;
+    padding: 0.625em;
 }
 
 #section-user-article {
-    padding: 1.25em;
+    padding: 0.625em;
 }
 
 #section-login,
@@ -172,10 +172,8 @@ button {
     background-color: #FFFFFF;
     border-radius: 0.5em;
     padding: 1.25em;
-}
-
-#section-register {
-    margin-top: 1.25em;
+    width: 345px;
+    box-sizing: border-box;
 }
 
 #section-login h2,
@@ -241,11 +239,10 @@ nav {
 }
 
 nav a {
-    display: block;
     color: #00d66c;
     text-decoration: none;
-    font-size: 1.25rem;
-    padding: 0.3rem 0;
+    font-size: 1.25em;
+    padding: 0.3em 0;
 }
 
 nav a:hover {
