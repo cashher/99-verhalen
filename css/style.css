@@ -58,7 +58,7 @@ label {
     font-style: normal;
     font-weight: bold;
     margin: 0;
-    padding-bottom: 1.25rem;
+    padding-bottom: 1.25em;
 }
 
 h1 {
@@ -155,7 +155,7 @@ button {
 #section-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.25em;
 }
 
 #section-populair-article {
@@ -244,8 +244,8 @@ nav a {
     display: block;
     color: #00d66c;
     text-decoration: none;
-    font-size: 1.25rem;
-    padding: 0.3rem 0;
+    font-size: 1.25em;
+    padding: 0.3em 0;
 }
 
 nav a:hover {
