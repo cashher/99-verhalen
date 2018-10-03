@@ -4,12 +4,9 @@
                 1. Font-face elements (afkomstig van Transavia)
                 2. Default elements
                 3. Form elements
-                4. Main/section elements
-                5. Header elements
-                6. Navigation elements
-                7. Search elements
-                8. Article elements
-                9. Footer elements
+                4. Body > main elements
+                5. Body > header elements
+                6. Body > footer elements
 ################################################################################################################
 */
 
@@ -20,17 +17,17 @@
 */
 
 @font-face {
-    font-family: "Nexa Bold";
-    src: url("https://www.transavia.com/static/fonts/Nexa_XBold-webfont.woff2") format("woff2"), url("https://www.transavia.com/static/fonts/Nexa_XBold-webfont.woff") format("woff"), url("https://www.transavia.com/static/fonts/Nexa_XBold-webfont.ttf") format("truetype"), url("https://www.transavia.com/static/fonts/Nexa_XBold-webfont.svg#nexa_xboldregular") format("svg");
-    font-style: normal;
-    font-weight: bold;
-}
-
-@font-face {
     font-family: "Nexa";
     src: url("https://www.transavia.com/static/fonts/Nexa_Regular-webfont.woff2") format("woff2"), url("https://www.transavia.com/static/fonts/Nexa_Regular-webfont.woff") format("woff"), url("https://www.transavia.com/static/fonts/fonts/Nexa_Regular-webfont.ttf") format("truetype"), url("https://www.transavia.com/static/fonts/fonts/Nexa_Regular-webfont.svg#nexa_regularregular") format("svg");
     font-style: normal;
     font-weight: normal;
+}
+
+@font-face {
+    font-family: "Nexa Bold";
+    src: url("https://www.transavia.com/static/fonts/Nexa_XBold-webfont.woff2") format("woff2"), url("https://www.transavia.com/static/fonts/Nexa_XBold-webfont.woff") format("woff"), url("https://www.transavia.com/static/fonts/Nexa_XBold-webfont.ttf") format("truetype"), url("https://www.transavia.com/static/fonts/Nexa_XBold-webfont.svg#nexa_xboldregular") format("svg");
+    font-style: bold;
+    font-weight: bold;
 }
 
 /*
@@ -39,14 +36,9 @@
 ################################################################################################################
 */
 
-body {
-    font-family: "Nexa";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1em;
-    color: #606060;
-    margin: 0;
-    background-color: #FFFFFF;
+p {
+    margin: 1.25em 0;
+    color: #000000;
 }
 
 h1,
@@ -55,7 +47,7 @@ h3,
 nav,
 label {
     font-family: "Nexa Bold";
-    font-style: normal;
+    font-style: bold;
     font-weight: bold;
     margin: 0;
     padding-bottom: 1.25rem;
@@ -67,14 +59,6 @@ h1 {
 
 h2 {
     color: #2800a0;
-}
-
-p {
-    margin: 1.25em 0;
-}
-
-a:hover {
-    color: #FF3268;
 }
 
 a {
@@ -101,6 +85,43 @@ input[type=password] {
     margin-bottom: 1.25em;
 }
 
+input[type="search"] + button {
+    font-size: 1em;
+    font-family: "Nexa Bold";
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 100%;
+    height: 2.6875em;
+    background-color: #00D66C;
+    border-radius: 1.25em;
+    box-shadow: inset 0 -.1875rem .0625rem #1e9162;
+    border: none;
+}
+
+input[type="search"] + button:hover {
+    background-color: #4DE298;
+}
+
+button {
+    font-size: 1em;
+    font-family: "Nexa Bold";
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 100%;
+    height: 2.6875em;
+    background-color: #FF3268;
+    border-radius: 1.25em;
+    /*Box-shadow afkomstig van Transavia*/
+    box-shadow: inset 0 -.1875rem .0625rem #CA2B55;
+    border: none;
+}
+
+button:hover {
+    background-color: #FF658E;
+}
+
 legend {
     display: none;
 }
@@ -116,187 +137,91 @@ label {
     padding-bottom: 0.625em;
 }
 
-button {
-    font-size: 1em;
-    font-family: "Nexa Bold";
-    font-style: normal;
-    font-weight: bold;
-    color: #FFFFFF;
-    width: 100%;
-    height: 2.6875em;
-    background-color: #00D66C;
-    border-radius: 1.25em;
-    /*Box-shadow afkomstig van Transavia*/
-    box-shadow: inset 0 -.1875rem .0625rem #1e9162;
-    border: none;
-}
-
-.inloggen-button {
-    background-color: #FF3268;
-    /*Box-shadow afkomstig van Transavia*/
-    box-shadow: inset 0 -.1875rem .0625rem #CA2B55;
-}
-
-.inloggen-button:hover {
-    background-color: #FF658E;
-}
-
 /*
 ################################################################################################################
-                4. MAIN/SECTION ELEMENTS
+                4. BODY > MAIN ELEMENTS
 ################################################################################################################
 */
 
-#main-login-register {
-    background-color: #00d66c;
-    padding: 1.25em;
-}
-
-#section-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.25em;
-}
-
-#section-populair-article {
-    background-color: #F3E5D8;
-    padding: 1.25em;
-}
-
-#section-user-article {
-    padding: 1.25em;
-}
-
-#section-login,
-#section-register {
+body {
+    font-family: "Nexa";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    color: #606060;
+    margin: 0;
     background-color: #FFFFFF;
-    border-radius: 0.5em;
-    padding: 1.25em;
 }
 
-#section-register {
-    margin-top: 1.25em;
+body > #main-login-register {
+    background-color: #00d66c;
+    padding: 0.625em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
 }
 
-#section-login h2,
-#section-register h2 {
+body > #main-login-register > section > h2 {
+    margin: 0;
     border-bottom: 0.0625em solid #CCCCCC;
 }
 
-#section-header h1 {
-    font-size: 1.75em;
+body > #main-login-register > section {
+    background: #FFFFFF;
+    display: block;
+    width: 20.9375em;
+    box-sizing: border-box;
+    margin: 0.625em;
+    padding: 1.25em;
+    border-radius: 0.5em;
+}
+
+body > section:first-of-type {
+    border: 0.0625em solid #CCCCCC;
+    padding: 1.25em;
+}
+
+body > main > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    padding: 0.625em;
+}
+
+body > main > section:first-of-type {
+    background-color: #F3E5D8;
+}
+
+body > main > section:first-of-type > article {
+    border: none;
+}
+
+body > main > section > h2 {
+    width: 100%;
+    margin: 0 0.625rem 0 0.625rem;
+    padding: 0.625rem 0;
+}
+
+body > main > section > article {
+    border: 0.0625em solid #CCCCCC;
+    background-color: #FFFFFF;
+    border-radius: 0.5em;
+    padding: 1.25em;
+
+    max-width: 335px;
+    box-sizing: border-box;
+    margin: 0.625em;
+}
+
+body > main > section > article > h3 {
+    color: #FF3268;
+    margin: 0;
     padding: 0;
 }
 
-/*
-################################################################################################################
-                5. HEADER ELEMENTS
-################################################################################################################
-*/
-
-header {
-    padding: 1.25em;
-}
-
-#logo {
-    background: url('../img/transavia-icon.svg');
-    background-size: 2.25em;
-    width: 2.25em;
-    height: 2.25em;
-    background-repeat: no-repeat;
-}
-
-#account {
-    background: url('../img/user-icon.svg');
-    background-size: cover;
-    width: 2.25em;
-    height: 2.25em;
-    background-repeat: no-repeat;
-}
-
-#account:hover {
-    background: url('../img/user-icon-purple.svg');
-    background-size: cover;
-    width: 2.25em;
-    height: 2.25em;
-    background-repeat: no-repeat;
-}
-
-#account-active {
-    background: url('../img/user-icon-purple.svg');
-    background-size: cover;
-    width: 2.25em;
-    height: 2.25em;
-    background-repeat: no-repeat;
-}
-
-/*
-################################################################################################################
-                6. NAVIGATION ELEMENTS
-################################################################################################################
-*/
-
-nav {
-    padding-bottom: 0;
-}
-
-nav a {
-    display: block;
-    color: #00d66c;
-    text-decoration: none;
-    font-size: 1.25em;
-    padding: 0.3em 0;
-}
-
-nav a:hover {
-    color: #2800a0;
-}
-
-#nav-a-active {
-    color: #2800a0;
-}
-
-/*
-################################################################################################################
-                7. SEARCH ELEMENTS
-################################################################################################################
-*/
-
-#section-search {
-    border-top: 0.0625em solid #CCCCCC;
-    padding: 1.25em;
-}
-
-#search-button:hover {
-    background-color: #4DE298;
-}
-
-/*
-################################################################################################################
-                8. ARTICLE ELEMENTS
-################################################################################################################
-*/
-
-.user-article {
-    border: 0.0625em solid #CCCCCC;
-    border-radius: 0.5em;
-    padding: 1.25em;
-    margin-bottom: 1.25em;
-}
-
-.user-article:last-child,
-.populair-article:last-child {
-    margin-bottom: 0;
-}
-
-.populair-article {
-    background-color: #FBF7F3;
-    border-radius: 0.5em;
-    padding: 1.25em;
-    margin-bottom: 1.25em;
-}
-
-.populair-article-img {
+body > main > section > article > header {
     border: 0.0625em solid #CCCCCC;
     border-radius: 0.5em;
     padding: 1.25em;
@@ -306,60 +231,130 @@ nav a:hover {
     justify-content: flex-end;
 }
 
-.title {
-    color: #FF3268;
-    margin: 0;
-    padding: 0;
-}
-
-.summary {
-    color: #000000;
-}
-
-.date {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.metadata {
-    padding: 0;
-    margin: 0;
-}
-
-.metadata li {
-    list-style-type: none;
-    font-size: 0.75em;
-}
-
-.favorite-story {
+body > main > section > article > header > a {
     background: url('../img/favorite-icon-gray.svg');
     background-size: 1.5625em;
     width: 1.5625em;
     background-repeat: no-repeat;
 }
 
-.favorite-story:hover {
+body > main > section > article > header > a:hover {
     background: url('../img/favorite-icon.svg');
     background-size: 1.5625em;
     width: 1.5625em;
     background-repeat: no-repeat;
 }
 
-.favorite-story-active {
+body > main > section:nth-of-type(2) > article > header > a {
     background: url('../img/favorite-icon.svg');
     background-size: 1.5625em;
     width: 1.5625em;
     background-repeat: no-repeat;
 }
-
 
 /*
 ################################################################################################################
-                8. FOOTER ELEMENTS
+                5. BODY > HEADER ELEMENTS
 ################################################################################################################
 */
 
-footer {
-    padding: 1.25em;
+body > header {
+    padding: 20px;
+}
+
+body > header > nav > a,
+body > footer > nav > a {
+    color: #00d66c;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding: 0 0.5em 0 0.5em;
+}
+
+body > header > nav > a:first-child,
+body > footer > nav > a:first-child {
+    padding-left: 0;
+}
+
+body > header > nav > a:hover,
+body > footer > nav > a:hover {
+    color: #2800a0;
+}
+
+body > header > nav > #nav-a-active {
+    color: #2800a0;
+}
+
+body > header > nav {
+    padding-bottom: 0;
+}
+
+body > header > section {
+    display: flex;
+    justify-content: space-between;
+}
+
+body > header > section > a:first-of-type {
+    background: url('../img/transavia-icon.svg');
+    background-size: 2.25em;
+    width: 2.25em;
+    height: 2.25em;
+    background-repeat: no-repeat;
+}
+
+body > header > section > a:last-of-type {
+    background: url('../img/user-icon.svg');
+    background-size: cover;
+    width: 2.25em;
+    height: 2.25em;
+    background-repeat: no-repeat;
+}
+
+body > header > section > a:last-of-type:hover {
+    background: url('../img/user-icon-purple.svg');
+    background-size: cover;
+    width: 2.25em;
+    height: 2.25em;
+    background-repeat: no-repeat;
+}
+
+body > header > section > #account-active {
+    background: url('../img/user-icon-purple.svg');
+    background-size: cover;
+    width: 2.25em;
+    height: 2.25em;
+    background-repeat: no-repeat;
+}
+
+/*
+
+/*
+################################################################################################################
+                6. BODY > FOOTER ELEMENTS
+################################################################################################################
+*/
+
+body > main > section > article > footer {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+body > main > section > article > footer > ul {
+    margin: 0;
+    padding: 0;
+}
+
+body > main > section > article > footer > ul li {
+    list-style-type: none;
+    font-size: 0.75em;
+}
+
+body > main > section > article > footer > ul > li:nth-last-of-type(2) {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+body > footer {
+    padding: 1.25em 1.25em 0 1.25em;
+    margin: 0;
     background-color: #f7f7f7;
 }

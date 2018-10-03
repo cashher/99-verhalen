@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>99 Verhalen - inloggen</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="icon" type="image/svg+xml" href="img/transavia-icon.svg">
 </head>
 
 <body>
 
     <header>
-        <section id="section-header">
-            <a href="index.html" id="logo" title="Naar voorpagina"></a>
+        <section>
+            <a href="index.html" title="Naar voorpagina"></a>
             <a href="index.html" title="Naar voorpagina">
                 <h1>99 Verhalen</h1>
             </a>
-            <a href="account.html" id="account-active" title="Naar mijn account"></a>
+            <a href="account.html" title="Naar mijn account" id="account-active"></a>
         </section>
         <nav>
             <a href="index.html">Voorpagina</a>
@@ -27,19 +28,18 @@
         </nav>
     </header>
 
-    <section id="section-search">
+    <section>
         <h2>Verhalen zoeken</h2>
-        <form id="search-form">
-            <input type="search" placeholder="Term invoeren" id="search-field" title="Vul een zoekterm in" required>
-            <button id="search-button">Zoeken</button>
+        <form>
+            <input type="search" placeholder="Term invoeren" title="Vul een zoekterm in" required>
+            <button>Zoeken</button>
         </form>
-
     </section>
 
     <!--bron: https://developer.mozilla.org/nl/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form-->
 
     <main id="main-login-register">
-        <section id="section-login">
+        <section>
             <h2>Inloggen</h2>
             <form>
                 <fieldset>
@@ -49,19 +49,19 @@
                     <input type="email" placeholder="Gebruiker@domein.nl" id="uname" title="Vul je e-mailadres in" required>
                     <label for="pswrd">Wachtwoord</label>
                     <input type="password" placeholder="Wachtwoord" id="pswrd" title="Vul je wachtwoord in" required>
-                    <button class="inloggen-button">Inloggen</button>
+                    <button>Inloggen</button>
                 </fieldset>
             </form>
             <p><a href="#" title="Wachtwoord vergeten?">Wachtwoord vergeten?</a></p>
             <p>Heb je geen account? <a href="#" title="Account aanmaken">Meld je nu aan!</a></p>
         </section>
-        <section id="section-register">
+        <section>
             <h2>Registreren</h2>
             <form>
                 <fieldset>
                     <legend>Registreren</legend>
                     <p>Heb je geen account? Meld je nu aan!</p>
-                    <button class="inloggen-button">Registreren</button>
+                    <button>Registreren</button>
                 </fieldset>
             </form>
         </section>
