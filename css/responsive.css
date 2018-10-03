@@ -1,0 +1,24 @@
+/*
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://codepen.io/colinlord/post/horizontal-scrolling-containers
+https://zellwk.com/blog/rem-vs-em/
+*/
+
+@media only screen and (max-width: 729px) {
+    body > header > nav > a {
+        display: block;
+        padding: 0.3em 0 0.3em 0;
+    }
+
+    body > header > nav > a:first-child {
+        padding-top: 0;
+    }
+
+    body > header > nav > a:last-child {
+        padding-bottom: 0;
+    }
+
+    body > #main-login-register > section:first-child {
+        margin-bottom: 1.25em;
+    }
+}
